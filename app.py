@@ -62,7 +62,7 @@ def ussd():
         elif text == '4':
             response = '''CON Thank you \n0. Back'''
 
-        elif text == '6'
+        elif text == '6':
             response = '''END We are reaching you via call'''
             make_call(phone_number)
         elif text in ['1*0', '2*0', '3*0', '4*0']:
