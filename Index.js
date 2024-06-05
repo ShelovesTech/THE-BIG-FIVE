@@ -8,7 +8,7 @@ const app = express();
 const PORT = 3000;
 
 const credentials = {
-  apiKey: "",
+  apiKey: "00fb1d32a2f524923222bc8c95c752a3b9bfdde06f37d75a34528997b26030de",
   username: "eKaranja777",
 };
 const AfricasTalking = require("africastalking")(credentials);
@@ -20,7 +20,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
  
 
-app.post("/", async(req, res) => {
+app.post("/USSD", async(req, res) => {
     console.log("hiiii")
     const { phoneNumber, text } = req.body
      if (text === "") {
