@@ -61,6 +61,10 @@ def ussd():
             response = '''CON You will receive a link to the volunteer form shortly \n0. Back'''
         elif text == '4':
             response = '''CON Thank you \n0. Back'''
+
+        elif text == '6'
+            response = '''END We are reaching you via call'''
+            make_call(phone_number)
         elif text in ['1*0', '2*0', '3*0', '4*0']:
             response = '''CON What would you like to do
             1. Information on wildlife, places to visit
